@@ -13,18 +13,18 @@ public class BinarySearch {
 	public int search(int searchMe) {
 
 		int lower = 0;
-		int upper = Data.INT_ARRAY.length;
+		int upper = Data.SORTED_INT_ARRAY.length;
 		int mid = 0;
 
 		while (lower < upper) {
 			mid = ((upper - lower) / 2) + 1;
 
-			if (searchMe > Data.INT_ARRAY[mid]) {
+			if (searchMe > Data.SORTED_INT_ARRAY[mid]) {
 				lower = mid + 1;
-			} else if (searchMe < Data.INT_ARRAY[mid]) {
+			} else if (searchMe < Data.SORTED_INT_ARRAY[mid]) {
 				upper = mid - 1;
 			} else {
-				return Data.INT_ARRAY[mid];
+				return Data.SORTED_INT_ARRAY[mid];
 			}
 		}
 		return -1;
