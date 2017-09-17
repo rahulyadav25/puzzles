@@ -1,4 +1,4 @@
-package Hash;
+package hash;
 
 public class DistinctName {
 
