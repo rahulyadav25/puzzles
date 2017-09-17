@@ -13,7 +13,7 @@ public class BinarySearch {
 	public int search(int searchMe) {
 
 		int lower = 0;
-		int upper = Data.SORTED_INT_ARRAY.length;
+		int upper = Data.SORTED_INT_ARRAY.length - 1;
 		int mid = 0;
 
 		while (lower < upper) {
