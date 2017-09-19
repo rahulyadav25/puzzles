@@ -7,7 +7,7 @@ public class BinarySearch {
 	public static void main(String[] args) {
 
 		BinarySearch bs = new BinarySearch();
-		System.out.println(bs.search(4));
+		System.out.println(bs.search(5));
 	}
 
 	public int search(int searchMe) {
@@ -17,8 +17,8 @@ public class BinarySearch {
 		int mid = 0;
 
 		while (lower < upper) {
-			mid = ((upper - lower) / 2) + 1;
-
+			// mid = ((upper - lower) / 2) + 1;
+			mid = lower + (upper - lower) / 2;
 			if (searchMe > Data.SORTED_INT_ARRAY[mid]) {
 				lower = mid + 1;
 			} else if (searchMe < Data.SORTED_INT_ARRAY[mid]) {
